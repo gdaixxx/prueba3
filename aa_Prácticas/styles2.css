@@ -1,0 +1,190 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaración de varibales */
+:root {
+    --background-color: #292c3d;
+    --nav-color: #3d425c;
+    --font-color: #c0caf4;
+    --highlight-color: #a9578c;
+    --other-highlight-color: rgb(255, 71, 71)
+}
+
+/* Fuentes */
+/* font-family: "Roboto", serif;  no funciona*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Estilos generales */
+
+body {
+    background-color: var(--background-color);
+    
+}
+
+h1 {
+    font-family: "Bebas Neue", serif;
+    font-size: 4em;
+    color: white;
+}
+
+h2{
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: var(--font-color);
+    font-family: "Ubuntu";
+    font-style: italic;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+footer {
+    background-color: #101325;
+    padding: 1em;
+}
+
+main {
+    margin: 5%;
+}
+
+header {
+    padding: 0em;
+    margin:15px;
+}
+
+p {
+    font-family: "Ubuntu", serif;
+    color: white;
+    text-align: justify;
+    margin: 1em;
+}
+
+#menu {
+    padding: 5px 25px 5px;
+    font-family: "Bebas Neue", serif;
+    justify-content: space-between;
+    background-color: #3d425c;
+    border-radius: 12px;
+    margin: 6px;
+    align-items: center;
+}
+
+
+#menu_list {
+    font-family: "Bebas Neue", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#menu_list a:link,
+a:visited {
+    color: #c8d2fd;
+    text-decoration: none;
+}
+
+#menu_list {
+    color: #c8d2fd;
+    text-decoration: none;
+}
+
+/* mouse over link */
+#menu_list a:hover {
+    color: hotpink;
+}
+
+#menu_list a:active {
+    color: blue;
+}
+
+#menu_list li {
+    border-left: solid hotpink 2px;
+    padding: 0em 1em;
+    gap: 1em;
+}
+
+#logos-unr {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+    height: 80px;
+
+}
+
+#logo-fhumyar {
+    height: 40px;
+    opacity: 50%;
+}
+
+.miembros{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.miembros p {
+    font-weight: 100;
+    color: var(--background-color);
+    text-align: center;
+}
+
+.miembros h4{
+    color: #a9578c;
+    font-weight: 500;
+    text-align: center;
+}
+
+.miembro {
+    display: inline-block;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin: 1em;
+
+}
+
+.red{
+    color: white;
+}
+
+.publicacion{
+    background-color: lightgray;
+    padding: 0.5em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.publicacion p{
+    color: var(--background-color);
+    line-height: 1.7em;
+}
+
+.label {
+    background-color: rgb(255, 71, 71);
+    padding: 3px 1em;
+    border-radius: 1em;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: .2em;
+}
+
+.autor{
+    color: var(--other-highlight-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+

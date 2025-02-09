@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+        <title>Cátedra Libre Ferdinand de Saussure</title>
+    
+</head>
+
+<body>
+    <header>
+        
+        <h1>Cátedra Libre Ferdinand de Saussure</h1>
+
+        <nav class="navbar">
+
+            <div class="navbar__logo"> <img src="../assets/imgs/logo_unr.png" alt=""></div>
+    
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="../index.html">Inicio</a>
+                </li> 
+                <li class="navbar__menu-item">
+                    <a href="../pages/publicaciones.html">Publicaciones</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="../pages/actividades.html">Actividades</a>
+                </li>
+                <li class="navbar__menu-item--selected">
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>  
+                <li class="navbar__menu-item">
+                    <a href="../pages/miembros.html">Quiénes somos</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>Dejanos tu mensaje y pronto te responderemos</h2>
+        <img src="../assets/imgs//manuscrito.png" alt="" style="width:500px;max-width: 100%;">
+
+        <form action="" method="post">
+            <p><label for="nombre">Nombre:</label>
+            <input type="text" value="" name="nombre" autocapitalize="on" autofocus> </input></p>
+
+            <p><label for="tel">Teléfono:</label>
+            <input type="text" placeholder="341-3049093" maxlength="12" name="tel"> </input></p>
+
+            <p> <label for="mail"> Correo electrónico:</label>
+            <input type="email" name="mail"></input></p>
+
+            <p><label for="primer_contacto"> ¿Es la primera vez que nos contacta por este motivo?:</label>
+            <input type="radio" name="primer_contacto" checked>Sí</input>
+            <input name="primer_contacto" type="radio">No</input></p>
+
+            <p><label for="universidad">Filiación académica:</label></p>
+            <p> <input list="universidad">
+                <datalist id="universidad" name="universidad">
+                    <option value="Universidad Nacional de Córdoba"></option>
+                    <option value="Universidad de Buenos Aires"></option>
+                    <option value="Universidad Nacional del Litoral"></option>
+                    <option value="Universidad Nacional de La Plata"></option>
+                    <option value="Universidad Nacional de Tucumán"></option>
+                    <option value="Universidad Nacional de Cuyo"></option>
+                    <option value="Universidad Tecnológica Nacional"></option>
+                    <option value="Universidad Nacional del Nordeste"></option>
+                    <option value="Universidad Nacional del Sur"></option>
+                    <option value="Universidad Nacional de Rosario"></option>
+                    <option value="Universidad Nacional del Comahue"></option>
+                    <option value="Universidad Nacional de Río Cuarto"></option>
+                    <option value="Universidad Nacional de Catamarca"></option>
+                    <option value="Universidad Nacional de Lomas de Zamora"></option>
+                    <option value="Universidad Nacional de Salta"></option>
+                    <option value="Universidad Nacional de Entre Ríos"></option>
+                    <option value="Universidad Nacional de Jujuy"></option>
+                    <option value="Universidad Nacional de La Pampa"></option>
+                    <option value="Universidad Nacional de Luján"></option>
+                    <option value="Universidad Nacional de Misiones"></option>
+                    <option value="Universidad Nacional de San Juan"></option>
+                    <option value="Universidad Nacional de San Luis"></option>
+                    <option value="Universidad Nacional de Santiago del Estero"></option>
+                    <option value="Universidad Nacional del Centro de la Provincia de Buenos Aires"></option>
+                    <option value="Universidad Nacional de Mar del Plata"></option>
+                    <option value="Universidad Nacional de la Patagonia San Juan Bosco"></option>
+                    <option value="Universidad Nacional de Formosa"></option>
+                    <option value="Universidad Nacional de La Matanza"></option>
+                    <option value="Universidad Nacional de Quilmes"></option>
+                    <option value="Universidad Nacional de Gral. San Martín"></option>
+                    <option value="Universidad Nacional de Gral. Sarmiento"></option>
+                    <option value="Universidad Nacional de La Rioja"></option>
+                    <option value="Universidad Nacional de la Patagonia Austral"></option>
+                    <option value="Universidad Nacional de Lanús"></option>
+                    <option value="Universidad Nacional de Tres de Febrero"></option>
+                    <option value="Universidad Nacional de Villa María"></option>
+                    <option value="Universidad Nacional de Chilecito"></option>
+                    <option value="Universidad Nacional del Noroeste de la Provincia de Buenos Aires"></option>
+                    <option value="Universidad Nacional del Chaco Austral"></option>
+                    <option value="Universidad Nacional de Río Negro"></option>
+                    <option value="Universidad Nacional Arturo Jauretche"></option>
+                    <option value="Universidad Nacional de Avellaneda"></option>
+                    <option value="Universidad Nacional de José C. Paz"></option>
+                    <option value="Universidad Nacional de Moreno"></option>
+                    <option value="Universidad Nacional del Oeste"></option>
+                    <option value="Universidad Nacional de Villa Mercedes"></option>
+                    <option value="Universidad Nacional de Tierra del Fuego, Antártida e Islas del Atlántico Sur"></option>
+                    <option value="Universidad de la Defensa Nacional"></option>
+                    <option value="Universidad Nacional de Hurlingham"></option>
+                    <option value="Universidad Nacional de las Artes"></option>
+                    <option value="Universidad Nacional de los Comechingones"></option>
+                    <option value="Universidad Nacional Madres de Plaza de Mayo "></option>
+                    <option value="Universidad Nacional de Rafaela"></option>
+                    <option value="Universidad Nacional Almirante Guillermo Brown"></option>
+                    <option value="Universidad Nacional de San Antonio de Areco"></option>
+                    <option value="Universidad Nacional del Alto Uruguay"></option>
+                    <option value="Universidad Nacional Raúl Scalabrini Ortiz"></option>
+                    <option value="Universidad Pedagógica Nacional"></option>
+                    <option value="Universidad Nacional del Delta "></option>
+                </datalist>
+            </p>
+
+            <p><label for="consulta">Consulta:</label></p>
+            <p><textarea id="consulta" name="consulta" rows="5" cols="50" spellcheck="true"></textarea></p>
+
+        </form>
+    </main>
+
+    <footer>
+        <img src="../assets/imgs//logo_fhumyar.png" id="logo-fhumyar"> <p>Copyright © 2025</p> <a href="#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=IG"></a><a href="mailto:#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=@"></a>
+    </footer>
+
+</body>
+</html>
