@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZetaOffice Integration</title>
+    <script src="https://cdn.zetaoffice.net/zetaoffice_latest/soffice.js"></script>
+</head>
+<body>
+    <h1>Integración con ZetaOffice</h1>
+    <p>Este es un ejemplo de cómo integrar ZetaOffice usando el CDN.</p>
+
+    <canvas id="qtcanvas" contenteditable="true" oncontextmenu="event.preventDefault()" onkeydown="event.preventDefault()" width="846" height="446" style="border: 0px; padding: 0px; outline: rgb(204, 204, 204) solid 1px; cursor: default;">
+        <!-- QT requires the canvas to have the ID "qtcanvas". -->
+        <!-- The canvas *must not* have any border or padding, or mouse coords will be wrong. -->
+        <!-- An outline is fine though. -->
+    </canvas>
+
+    <div class="w3-margin-bottom">
+        Download: <button class="w3-button w3-round w3-grey w3-padding-small w3-theme" id="btnOdt" onclick="btnDownloadFunc(this)">ODT</button> <button class="w3-button w3-round w3-grey w3-padding-small w3-theme" id="btnPdf" onclick="btnDownloadFunc(this)">PDF</button>
+    </div>
+
+    <script type="text/javascript">
+        'use strict';
+
+        // Set base URL to the soffice.* files.
+        let soffice_base_url = 'https://cdn.zetaoffice.net/zetaoffice_latest/';
+
+        const canvas = document.getElementById('qtcanvas');
+        let thrPort;     // ZetaJS thread communication
+
+        var Module = {
+            canvas,
+            locateFile: function(path, prefix) { return (prefix || soffice_base_url) + path; },
+            uno_scripts: [soffice_base_url + 'zeta.js', soffice_base_url + 'office_thread.js'],
+            onRuntimeInitialized: function() {
+                console.log('Module has been initialized');
+                Module.uno_main.then(function(pThrPort) {
+                    thrPort = pThrPort;
+                    thrPort.onmessage = function(e) {
+                        console.log('Message from ZetaJS:', e.data);
+                        switch (e.data.cmd) {
+                            case 'ready':
+                                console.log('ZetaOffice is ready');
+                                break;
+                            case 'download':
+                                const bytes = FS.readFile('/tmp/output');
+                                const format = e.data.id === 'btnOdt' ? 'odt' : 'pdf';
+                                const blob = new Blob([bytes], { type: 'application/' + format });
+                                const link = document.createElement('a');
+                                link.href = URL.createObjectURL(blob);
+                                link.download = 'letter.' + format;
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                                break;
+                            default:
+                                console.error('Unknown command:', e.data.cmd);
+                        }
+                    };
+                }).catch(function(error) {
+                    console.error('Failed to initialize ZetaOffice:', error);
+                });
+            }
+        };
+
+        function btnDownloadFunc(btnObj) {
+            thrPort.postMessage({ cmd: 'download', id: btnObj.id });
+        }
+
+        // Load the ZetaOffice script dynamically
+        const soffice_js = document.createElement("script");
+        soffice_js.src = soffice_base_url + "soffice.js";
+        document.body.appendChild(soffice_js);
+    </script>
+</body>
+</html>
