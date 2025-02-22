@@ -84,52 +84,131 @@
   </header>
   
   <main>
-    <!-- Acála idea sería que lo que se muestra debajo dependa de la interacción con los h2 (que no sabría cómo hacer pero que estimo debe requerir JS)-->
-    <div class="grupo-actividades"><section class="actividades">
-      <div class="circle"><h2>Reuniones mensuales</h2></div>
-    </section>
-    <section class="actividades">
-      <div class="circle"><h2>Participación en eventos académicos</h2></div>
-    </section>
-    <section class="actividades">
-      <div class="circle"><h2>Proyectos de investigación</h2></div>
-    </section></div>
+    <h2>Actividades</h2>
     
-    <section class="">
-      <h2>Participación en eventos académicos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, labore eveniet. Nobis asperiores explicabo laudantium sed. Rem veritatis reprehenderit, at accusantium tempore quod dolores doloribus impedit hic dicta sit sapiente.</p>
-    </section>
     
-    <section class="">
-      <h2>Proyectos de investigación</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas ea necessitatibus asperiores odio amet odit sint impedit eligendi in, mollitia quibusdam voluptate praesentium quia et incidunt distinctio illum aliquam!</p>
-      
-      <div class="mt-4 p-5 bg-primary text-white rounded">
-        <h1>Debatimos</h1>
-        <p>Cada mes la cátedra realiza una reunión abierta a docentes, estudiantes e investigadores y público general interesado en participar de las discusiones propuestas en la agenda de trabajo de sus miembros. </p>
-        <p>PROXIMA REUNION:</p>
-        <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="6684479" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" title="My countdown" href="//www.tickcounter.com/">My countdown</a>
-        
-      </p>
+    <div class="container">
+      <div class="row g-4">
+        <section class="col-12 bs-secondary-color bg-gradient text-white rounded presentacion-actividades">
+          <p>Conocé algunas de las iniciativas que lleva adelante la Cátedra Libre Ferdinand de Saussure desde su creación. Son todas actividades abiertas a las que podés sumarte para colaborar cuando quieras. Para más información, podés contactarte por correo electrónico comentando tu interés o acercate a una de nuestras reuniones para conversar.</p>
+        </section>
+        <section class="col col-md-12 col-lg me-lg-3 p-5 bs-secondary-color bg-gradient text-white rounded border border-light">
+          <h1>Debatimos</h1>
+          <p>Cada mes la cátedra realiza una reunión abierta a docentes, estudiantes e investigadores y público general interesado en participar de las discusiones propuestas en la agenda de trabajo de sus miembros. </p>
+          <p>PROXIMA REUNION:</p>
+          <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="6684479" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" title="My countdown" href="//www.tickcounter.com/">My countdown</a>
+          
+        </p>
+      </section>
+      <section class="col col-md-12 col-lg ms-lg-3 p-5 bs-secondary-color bg-gradient text-white rounded border border-light">
+        <h1>Comunicamos</h1>
+        <p>La cátedra participa todos los años de distintos eventos académicos como foros, jornadas, congresos y simposios de convocatoria nacional e interacional, como así también de conferencias y charlas abiertas a la comunidad. Nuestro propósito es dar a conocer a un público amplio las nuevas lecturas críticas de la obra de Ferdinand de Saussure y su impacto en el estudio de fenómenos lingüísticos de diversa filiación teórica. A futuro, nos interesa comenzar a producir contenido para redes, para lo cual se encuentra abierta de manera permanente la convocatoria a colaboradores estudiantes, egresados y docentes con interés en acompañar en ese camino. </p>
+      </section>
+      <section class="col-12 p-5 bs-secondary-color bg-gradient border-primary border border-light text-white rounded">
+        <h1>Investigamos</h1>
+        <p>Desde la cátedra, asesoramos e impulsamos el desarrollo de proyectos de investigación realcionados al campo temático de los estudios lingüísticos. Ponemos en contacto, además, a  estudiantes de la carrera de Letras con equipos ya arraigados para promover su incorporación, favorenciendo así una primera experiencia de investigación que aporte experiencia, formación metodológica y antecedentes académicos acreditables. Conocé algunas de los proyectos en curso...</p>
+        <div id="accordion">
+          <article class="card mb-3 mt-2 border border-0 rounded shadow-lg m-3">
+            <div class="card-header text-bg-dark text-center">
+              <a class="btn my-2" data-bs-toggle="collapse" href="#collapseOne">
+                <div class="autor mb-3">Fenómenos heterogéneos en la oralidad y en la escritura, analizados a partir de principios saussurianos</div>
+                <div class="label ">Norma&nbsp;Desinano</div>
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body bg-body-secondary rounded-bottom text-justify fs-6 text">
+                El Proyecto se presenta como parte de una línea de investigación en curso que se centra en la fragmentariedad como categoría que engloba toda una serie de fenómenos del habla. Generalmente estos fenómenos son considerados como errores o fallos derivados de situaciones del contexto o del desconocimiento de la lengua por parte del hablante. Se piensa también que son ocurrencias aisladas y accidentales dentro del habla, pero su aparición frecuente en la empiria, tanto en el habla de adultos como de niños, en la oralidad y en la escritura, permite hipotetizar que pueden ser una vía para introducirse en las complejas relaciones lengua/habla. Estos fenómenos crean una ruptura en la continuidad de los enunciados que causa extrañeza en el interlocutor /lector y lo obliga a reconsiderar lo escuchado /leído para que se cumpla eventualmente el objetivo comunicativo de la interlocución. Dentro de la fragmentariedad se plantean diferentes tipos de fenómenos que se consideran en principio como heterogéneos. Esta heterogeneidad se basa en su constitución lingüística, específicamente en un uso arbitrario de los recursos morfológicos del sistema de la lengua, que permiten la generación individual de signos  agramaticales en el uso. Para este proyecto se investigarán los fenómenos denominados hápax, neologismos y lapsus, bajo la doble mirada teórica del interaccionismo de la Escuela de Campinas y de la teoría saussuriana. Según el interaccionismo  estos fenómenos se encuadran en la dinámica cambiante y permanente de la interacción entre el sujeto hablante y su lengua, lo que crea la posibilidad de efecto de captura del hablante por la lengua, que le ofrece multiplicidad de recursos para la constitución del signo, aunque en muchos casos su empleo traspase la convencionalidad del habla. En cuanto a la teoría saussuriana,  la investigación estudiará  la entidad analógica de estos fenómenos considerando, como lo hace Saussure, la importancia de la analogía como propiedad fundamental del sistema de la lengua.
+                <hr>
+                <div style="text-align: center; line-height: 200%; gap:1em;"><span class="badge rounded-pill text-bg-secondary">fenómenos&nbsp;heterogéneos</span> <span class="badge rounded-pill text-bg-secondary">hápax</span> <span class="badge rounded-pill text-bg-secondary">neologismos</span><span class="badge rounded-pill text-bg-secondary">lapsus</span> <span class="badge rounded-pill text-bg-secondary">lengua</span><span class="badge rounded-pill text-bg-secondary">habla</span> <span class="badge rounded-pill text-bg-secondary">interacción</span><span class="badge rounded-pill text-bg-secondary">efecto&nbsp;de&nbsp;captura</span> <span class="badge rounded-pill text-bg-secondary">analogía</span>
+              
+              </div>
+            </div>
+          </article>
+
+          <article class="card mb-3 mt-2 border border-0 rounded shadow-lg m-3">
+            <div class="card-header text-bg-dark text-center">
+              <a class="btn my-2" data-bs-toggle="collapse" href="#collapseTwo">
+                <div class="autor mb-3">Aspectos de la Gramática Generativa y/o de las gramáticas generativas a la luz de los principios teóricos presentes en el CLG y en los ELG</div>
+                <div class="label ">Ana&nbsp;Laura&nbsp;Prado</div>
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body bg-body-secondary rounded-bottom text-justify fs-6 text">
+                Este preproyecto se inscribe en el marco de las discusiones que tienen lugar en la Cátedra Ferdinand de Saussure, y se  origina a partir de la pregunta respecto de los límites y alcances de la lingüística saussuriana en relación con sus posibilidades de abordar fenómenos de orden gramatical. Actualmente en este campo, las gramáticas estructurales parecen haber alcanzado su límite para dar lugar a otros enfoques, entre los que el generativismo goza de marcada aceptación. La indagación respecto de las posibles implicancias de los aportes saussurianos presentes en el Curso de Lingüística General y revisitados a la luz de los Escritos, se constituye como una pregunta a resolver en el largo plazo, pero orienta hacia la búsqueda de una línea de continuidad entre el pensamiento saussuriano y el programa de investigación chomskiano. En ese sentido se despliega un segundo interrogante respecto de la recepción de la obra  saussuriana en los primeros escritos de Chomsky. En ella, las menciones a Saussure forman parte de una argumentación que busca construir los antecedentes de su programa, que Chomsky entiende en términos de una síntesis que integra la corriente estructural, por el estudio detallado de los hechos, y la gramática filosófica, por su tendencia a la generalización abstracta. No obstante esto, es posible leer en la obra Chomskiana una serie de críticas dirigidas al estructuralismo para luego trazar con destacado detenimiento una línea de filiación directa con la filosofía moderna, en la que halla los antecedentes de la gramática universal. En lo que respecta al CLG, Chomsky señalará en la dicotomía langue/parole un punto de contacto con los conceptos de competencia/actuación, y reconocerá los alcances de la propuesta metodológica, explicitada en términos tales que advierten una recepción mediada del pensamiento saussuriano, de allí que una primera instancia de esta propuesta se detendrá en la recepción chomskiana respecto de los conceptos centrales presentes en el CLG.
+                <hr>
+                <div style="text-align: center; line-height: 200%; gap:1em;"><span class="badge rounded-pill text-bg-secondary">langue</span> <span class="badge rounded-pill text-bg-secondary">parole</span> <span class="badge rounded-pill text-bg-secondary">relaciones&nbsp;sintagmáticas</span> <span class="badge rounded-pill text-bg-secondary">relaciones&nbsp;asociativas</span> <span class="badge rounded-pill text-bg-secondary">valor&nbsp;lingüístico</span> <span class="badge rounded-pill text-bg-secondary">lingüística&nbsp;estructural</span> <span class="badge rounded-pill text-bg-secondary">gramática generativa</span>
+
+              </div>
+            </div>
+          </article>
+
+          <article class="card mb-3 mt-2 border border-0 rounded shadow-lg m-3">
+            <div class="card-header text-bg-dark text-center">
+              <a class="btn my-2" data-bs-toggle="collapse" href="#collapseThree">
+                <div class="autor mb-3">El funcionamiento del metalenguaje en el mecanismo de la lengua</div>
+                <div class="label">Ma.&nbsp;Cecilia&nbsp;Milan</div>
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body bg-body-secondary rounded-bottom text-justify fs-6 text">
+                La interrogación sobre la ambigüedad que comportan algunas estructuras metalingüísticas presentes en escrituras de alumnos del nivel secundario en una instancia de acceso al discurso de la Lingüística se constituyó como el punto de partida de esta indagación. En este punto se abrieron dos alternativas: o bien describir superficialmente estas estructuras y determinar los aspectos gramaticales que posibilitan la ambigüedad en términos de lo que falta o sobra o bien intentar una explicación que avance sobre la naturaleza del fenómeno y categorice sus causas. La primera alternativa supone una higienización (de Lemos, 1982) del error; la segunda, en cambio, compromete a la investigación. En este sentido, el marco del interaccionismo brasileño-argentino (de Lemos, 1992 y ss.; Lier de Vitto, 1995 y ss.; Desinano, 2005 y ss.; Arbusti, 2011 y ss.; entre otras) me permite hipotetizar que estas emergencias son marcas de la relación siempre dinámica del sujeto con la lengua y los discursos. Desde este enfoque, dinamismo implica imprevisibilidad pero no aleatoriedad en la ocurrencia de errores puesto que se postula la existencia de “zonas privilegiadas de errores, réplicas, dispersiones” a las que de Lemos denomina zonas de turbulencia. La reflexión sobre esta analogía inaugura la segunda y actual instancia de esta indagación puesto que viabiliza la pregunta ¿es el metalenguaje una zona de turbulencia? Considero que una vía para intentar responder a esta pregunta es examinar las resistencias y restricciones que impone la lengua en el metalenguaje, es decir, de qué modos el mecanismo de la lengua se impone a los sujetos en esta zona. Para ello, resulta necesario revisar la teoría saussureana, especialmente los conceptos de valor, signo, identidad, relaciones asociativas y relaciones sintagmáticas, y determinar de qué modo ésta permite explicar el funcionamiento del metalenguaje.
+                <hr>
+                <div style="text-align: center; line-height: 200%; gap:1em;"><span class="badge rounded-pill text-bg-secondary">escritura</span> <span class="badge rounded-pill text-bg-secondary">metalenguaje</span> <span class="badge rounded-pill text-bg-secondary">valor</span> <span class="badge rounded-pill text-bg-secondary hl-color">signo</span> <span class="badge rounded-pill text-bg-secondary">relaciones asociativas</span> <span class="badge rounded-pill text-bg-secondary">relaciones&nbsp;sintagmáticas</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card mb-3 mt-2 border border-0 rounded shadow-lg m-3">
+            <div class="card-header text-bg-dark text-center">
+              <a class="btn my-2" data-bs-toggle="collapse" href="#collapseFour">
+                <div class="autor mb-3">Las metáforas y los símiles en los textos saussurianos como matriz de generación conceptual</div>
+                <div class="label">Gastón&nbsp;Daix</div>
+              </a>
+            </div>
+            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body bg-body-secondary rounded-bottom text-justify fs-6 text">
+                Este proyecto se propone indagar en qué medida las metáforas y los símiles constituyen una matriz de generación conceptual en los escritos saussureanos inescindible de la teoría en su contexto de producción, y no como mero recurso pedagógico auxiliar puesto al servicio de la divulgación de un conocimiento ya consolidado como tal. En tal sentido, desde una perspectiva interactiva, asumimos que las metáforas constituyen modos de pensar capaces de engendrar representaciones del mundo y que, por tanto, antes que depender de semejanzas preexistentes entre entidades extralingüísticas, las crean performativamente en el discurso. Sobre la base de estos supuestos, tras un breve análisis de las conceptualizaciones clásicas acerca de la metáfora –de las que tomamos distancia– y de los argumentos por los que el discurso tradicional acerca de la ciencia erige una mítica incompatibilidad entre figuración y razón, procedemos a relevar y contrastar expresiones metafóricas evidenciadas en el Curso de lingüística general (CLG) y en los Escritos sobre lingüística general (ELG).
+                <hr>
+                <span class="badge rounded-pill text-bg-secondary">metáfora</span> <span class="badge rounded-pill text-bg-secondary">discurso científico</span> <span class="badge rounded-pill text-bg-secondary">figuración</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
-    <div class="mt-4 p-5 bg-primary text-white rounded">
-      <h1>Comunicamos</h1>
-      <p>Lorem ipsum...</p>
-    </div>
-    <div class="mt-4 p-5 bg-primary text-white rounded">
-      <h1>Investigamos</h1>
-      <p>Lorem ipsum...</p>
-    </div>
-  </main>
+  </div>
   
   
-  
-  <footer>
-    <img src="../assets/imgs//logo_fhumyar.png" id="logo-fhumyar"> <p>Copyright © 2025</p> <a href="#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=IG"></a><a href="mailto:#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=@"></a>
-  </footer>
-  
-  <!-- JS de Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+  <!-- Acála idea sería que lo que se muestra debajo dependa de la interacción con los h2 (que no sabría cómo hacer pero que estimo debe requerir JS)-->
+  <div class="contenedor-grupo-actividades">
+  <div class="grupo-actividades">
+
+      <div class="actividades text-center">
+        <div class="circle burbuja">36</div>
+        <div class="label">Reuniones</div>
+      </div>
+
+      <div class="actividades text-center">
+        <div class="circle burbuja text-center">15</div>
+        <div class="label">Eventos académicos</div>
+      </div>
+
+      <div class="actividades text-center">
+        <div class="circle burbuja">8</div>
+        <div class="label">Investigaciones</div>
+      </div>
+
+  </div>
+</div>
+</main>
+
+
+<footer>
+  <img src="../assets/imgs/logo_fhumyar.png" id="logo-fhumyar"> <p>Copyright © 2025</p> <a href="#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=IG"></a><a href="mailto:#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=@"></a>
+</footer>
+
+<!-- JS de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
