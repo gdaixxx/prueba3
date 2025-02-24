@@ -87,7 +87,7 @@ footer {
     padding: 1em 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: auto;
 
 }
@@ -141,9 +141,6 @@ input:focus, textarea:focus{
     align-items: center;
     height:92px;
 }
-
-
-
 
 .navbar-background {
     background-color: #3d425c;
@@ -400,7 +397,6 @@ input:focus, textarea:focus{
     justify-content: center;
     margin: 4em 0em;
     max-width: 1320px;
-    
 }
 
 .burbuja{ 
@@ -515,5 +511,8 @@ input:focus, textarea:focus{
         margin-right:0;
         margin-left: 0;
         width: auto;
-
+    }
+    .logo-unr-navbar{
+        display: none
+    }
 }
