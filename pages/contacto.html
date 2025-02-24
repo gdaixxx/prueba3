@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   
   <!-- Mi hoja de estilos -->
   <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
@@ -13,11 +15,13 @@
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&display=swap"
+  rel="stylesheet">
   
   <title>Cátedra Libre Ferdinand de Saussure</title>
   
 </head>
+
 <body>
   <header>
     
@@ -25,26 +29,26 @@
     
     <nav class="navbar-large">
       
-      <div class="navbar__logo"> 
+      <div class="navbar__logo">
         <img src="../assets/imgs/logo_unr.png" alt="">
       </div>
       
       <ul class="navbar__menu">
         <li class="navbar__menu-item">
           <a href="../index.html">Inicio</a>
-        </li> 
+        </li>
+        <li class="navbar__menu-item">
+          <a href="./miembros.html">Quiénes somos</a>
+        </li>
         <li class="navbar__menu-item">
           <a href="./publicaciones.html">Publicaciones</a>
         </li>
         <li class="navbar__menu-item">
           <a href="./actividades.html">Actividades</a>
         </li>
-        <li class="navbar__menu-item">
-          <a href="./miembros.html">Quiénes somos</a>
-        </li>
         <li class="navbar__menu-item--selected">
           <a href="./contacto.html">Contacto</a>
-        </li>  
+        </li>
       </ul>
       
     </nav>
@@ -56,53 +60,78 @@
             <img src="../assets/imgs/logo_unr.png" alt="Logo" width="45" height="24" class="logo-unr-navbar">
             &nbsp; Cátedra Libre Ferdinand de Saussure
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./miembros.html">Quiénes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./publicaciones.html">Publicaciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./actividades.html">Actividades</a>
-              </li>
-              <li class="nav-item--active">
-                <a class="nav-link" href="./contacto.html"  aria-disabled="true">Contacto</a>
-              </li>
-            </ul>
-          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./miembros.html">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./publicaciones.html">Publicaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item--active">
+              <a class="nav-link" href="./contacto.html" aria-disabled="true">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </nav>
-  </header>
+  </nav>
+</header>
+
+<main>
   
-  <main>
-    <h2>Dejanos tu mensaje y pronto te responderemos</h2>
-    <img src="../assets/imgs//manuscrito.png" alt="" style="width:500px;max-width: 100%;">
-    
-    <form action="" method="post">
-      <p><label for="nombre">Nombre:</label>
-        <input type="text" value="" name="nombre" autocapitalize="on" autofocus> </input></p>
-        
-        <p><label for="tel">Teléfono:</label>
-          <input type="text" placeholder="341-3049093" maxlength="12" name="tel"> </input></p>
-          
-          <p> <label for="mail"> Correo electrónico:</label>
-            <input type="email" name="mail"></input></p>
-            
-            <p><label for="primer_contacto"> ¿Es la primera vez que nos contacta por este motivo?:</label>
-              <input type="radio" name="primer_contacto" checked>Sí</input>
-              <input name="primer_contacto" type="radio">No</input></p>
+  <h2>Dejanos tu mensaje y pronto te responderemos</h2>
+  
+  <div class="container-fluid">
+    <div class="row g-3 text-justify">
+      
+      <div class="col-12 col-xl-5 text-center align-middle d-flex">
+        <img class="contact-form-img" src="../assets/imgs//manuscrito.png" alt="">
+      </div>
+      
+      
+      <div class="col col-xl-7 text-center">
+        <div class="container-fluid">
+          <div class="row">
+            <form action="" method="post" class="contact-form">
+              <div class="col col-xl-6 d-flex flex-column">
+                <label for="nombre">
+                  <p>Nombre:</p>
+                </label>
+                <input type="text" value="" name="nombre" autocapitalize="on" autofocus> </input>
+              </div>
               
-              <p><label for="universidad">Filiación académica:</label></p>
-              <p> <input list="universidad">
+              <div class="col col-xl-5 d-flex flex-column">
+                <label for="tel">
+                  <p>Teléfono:</p>
+                </label>
+                <input type="text" placeholder="341-3049093" maxlength="12" name="tel"> </input>
+              </div>
+              
+              <div class="col col-xl-6 d-flex flex-column">
+                <label for="mail">
+                  <p>Correo:</p>
+                </label>
+                <input type="email" name="mail"></input>
+              </div>
+              
+              
+              <div class="col col-md-12 col-xl-5">
+                <label for="universidad" class="col-12">
+                  <p>Filiación:</p>
+                </label>
+                
+                <input list="universidad" class="col-12">
                 <datalist id="universidad" name="universidad">
                   <option value="Universidad Nacional de Córdoba"></option>
                   <option value="Universidad de Buenos Aires"></option>
@@ -150,7 +179,8 @@
                   <option value="Universidad Nacional de Moreno"></option>
                   <option value="Universidad Nacional del Oeste"></option>
                   <option value="Universidad Nacional de Villa Mercedes"></option>
-                  <option value="Universidad Nacional de Tierra del Fuego, Antártida e Islas del Atlántico Sur"></option>
+                  <option value="Universidad Nacional de Tierra del Fuego, Antártida e Islas del Atlántico Sur">
+                  </option>
                   <option value="Universidad de la Defensa Nacional"></option>
                   <option value="Universidad Nacional de Hurlingham"></option>
                   <option value="Universidad Nacional de las Artes"></option>
@@ -164,20 +194,52 @@
                   <option value="Universidad Pedagógica Nacional"></option>
                   <option value="Universidad Nacional del Delta "></option>
                 </datalist>
-              </p>
+              </div>
               
-              <p><label for="consulta">Consulta:</label></p>
-              <p><textarea id="consulta" name="consulta" rows="5" cols="50" spellcheck="true"></textarea></p>
+              
+              <div class="col-12">
+                <p>
+                  <label for="consulta">Consulta:</label>
+                </p>
+                
+                <p>
+                  <textarea class="consulta" name="consulta" rows="5" spellcheck="true"></textarea>
+                </p>
+              </div>
+              <div class="container align-middle d-flex">
+                <label for="primer_contacto" class="col-6 d-flex align-middle">¿Es la primera vez que nos contacta por
+                  este motivo?:</label>
+                  <div class="col-3 d-flex align-middle">
+                    <p><input type="radio" name="primer_contacto" checked>Sí</input></p>
+                  </div>
+                  <div class="col-3 d-flex align-middle">
+                    <p><input name="primer_contacto" type="radio">No</input></p>
+                  </div>
+                </div>
+              </div>
               
             </form>
-          </main>
-          
-          <footer>
-            <img src="../assets/imgs//logo_fhumyar.png" id="logo-fhumyar"> <p>Copyright © 2025</p> <a href="#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=IG"></a><a href="mailto:#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=@"></a>
-          </footer>
-          
-          <!-- JS de Bootstrap -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-          
-        </body>
-        </html>
+            
+            
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="btn btn-danger">Enviar</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <img src="../assets/imgs//logo_fhumyar.png" id="logo-fhumyar">
+      <p>Copyright © 2025</p> <a href="#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=IG"></a><a
+      href="mailto:#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=@"></a>
+    </footer>
+    
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    
+  </body>
+  
+  </html>
