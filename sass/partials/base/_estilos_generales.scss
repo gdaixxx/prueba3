@@ -1,0 +1,46 @@
+body {
+    background-color: #292c3d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+main {
+    margin: 0 15px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #101325;
+    padding: 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: auto;
+}
+
+header {
+    padding: 0em;
+    margin:15px;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    text-align: justify;
+    margin: 1em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align: justify;
+    padding: 1em 2em;
+}

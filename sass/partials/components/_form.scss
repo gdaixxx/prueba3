@@ -1,0 +1,41 @@
+form div{
+    font-family: "Ubuntu", sans-serif;
+    color: map-get($color, text-color);
+    text-align: left;
+    margin: 0em .2em;
+}
+
+input, textarea {
+    background-color:  map-get($color, background-color);
+    color:  map-get($color, text-color);
+    text-transform: uppercase;
+    border: none;
+    border-bottom: solid 1px white;
+    field-sizing: content;
+}
+
+textarea {
+    border: solid;
+    border-color: map-get($color, nav-color);
+}
+
+input:focus, textarea:focus{
+    background-color: map-get($color, nav-color);
+}
+
+.contact-form{
+    border: solid 1px map-get($color, highlight-color);
+    border-radius: 6px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+.contact-form-img{
+    width:500px;
+    max-width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}

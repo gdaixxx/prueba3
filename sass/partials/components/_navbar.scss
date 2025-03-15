@@ -1,0 +1,67 @@
+// .navhead{
+//     color: map-get($color, nav-text)
+//     font-family: "Bebas Neue", serif;
+//     font-size: 4em;
+// }
+
+.navbar-large {
+    padding: 5px 25px 5px;
+    font-family: "Bebas Neue", serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: map-get($color, nav-bg-color);
+    border-radius: 12px;
+    margin: 6px;
+    align-items: center;
+    height:92px;
+}
+
+.navbar-background {
+    background-color: map-get($color, nav-bg-color);
+}
+
+.navbar__menu-item a:link, a:visited{
+    color: map-get($color, nav-link);
+    text-decoration: none;
+}
+
+.navbar__menu-item--selected{
+    text-decoration: none;
+    color: map-get($color, nav-text);
+    text-decoration: underline map-get($color , other-highlight-color) 3px;
+    text-underline-offset: 4px;
+}
+
+.nav-item--active a{
+    text-decoration: none;
+    color: white ;
+    text-decoration: underline map-get($color , other-highlight-color) 3px;
+    text-underline-offset: 4px;
+}
+
+
+.navbar__menu-item a:hover {
+    color: map-get($color, nav-highlight);
+}
+
+.navbar__menu-item a:active {
+    color: map-get($color, red-tag);
+}
+
+.navbar__menu-item, .navbar__menu-item--selected{
+    border-left: solid map-get($color, nav-highlight) 2px;
+    padding: 0em 1em;
+    gap: 1em;
+
+}
+
+.navbar__logo {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+#logo-fhumyar {
+    height: 40px;
+    opacity: 50%;
+}

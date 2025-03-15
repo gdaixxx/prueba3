@@ -1,0 +1,96 @@
+@media (min-width:1000px) {
+    .navbar__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-family: "Bebas Neue", sans-serif;
+        list-style-type: none;
+        font-size: 1.5em;
+        align-items: center;
+        margin-bottom: 0rem;
+    }
+    
+    .navbar-mobile{
+        display: none;
+    }
+
+    h2{
+        margin-top: 0px;
+    }
+
+    .presentacion{
+        font-size: 1.2em;
+        padding: 0.5em;
+        margin: 0 1.5em;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .contact-form-img{
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:999px) {
+
+    .navbar-large {
+        display: none; 
+    }
+
+    .navhead{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: block;
+        font-family: "Bebas Neue", sans-serif;
+        background-color: var(--nav-color);
+        color: var(--font-color)
+    }
+
+    h2{
+        margin-top:1em;
+    }
+
+    main{
+        padding-top:25px;
+    }
+
+    .bloques-grid{
+        margin: 0px;
+        padding: 0px;
+        width:100%;
+        overflow-x:visible;
+    }
+
+    .presentacion{
+        padding: 4px;
+        margin-top: 1.8em;
+        margin-right:0;
+        margin-left: 0;
+        width: auto;
+    }
+}
+
+@media (max-width: 400px){
+    
+    .bloques-grid{
+        margin: 0px;
+        padding: 0px;
+        width:100%;
+        overflow-x:visible;
+    }
+    .presentacion{
+        padding: 4px;
+        margin-top: 1.8em;
+        margin-right:0;
+        margin-left: 0;
+        width: auto;
+    }
+    .logo-unr-navbar{
+        display: none
+    }
+}

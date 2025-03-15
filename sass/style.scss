@@ -1,0 +1,22 @@
+//BASE
+@import 'partials/base/reset';
+@import 'partials/base/tipografia';
+@import 'partials/base/estilos_generales';
+
+
+// UTILITIES
+@import 'partials/utilities/variables';
+@import 'partials/utilities/mapas';
+@import 'partials/utilities/mixins';
+@import 'partials/utilities/animations';
+
+// COMPONENTES
+@import 'partials/components/titles';
+@import 'partials/components/navbar';
+@import 'partials/components/botones';
+@import 'partials/components/cards';
+@import 'partials/components/figure';
+@import 'partials/components/form';
+@import 'partials/components/actividades';
+
+@import 'partials/utilities/mediaqueries';

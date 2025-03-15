@@ -1,0 +1,42 @@
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+  }
+  .animate-bounce{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: 10em;
+      animation: bounce 2s ease infinite;
+      background: map-get($color, highlight-color);
+      color: map-get($color,miembro-bg-color);
+}
+
+.animate-bounce:hover{
+      background: map-get($color, red-tag);
+      color: map-get($color, text-color);
+}
+
+.bloques:nth-child(odd):hover{
+      filter: brightness(115%) drop-shadow(0.5em 0.5em #67184f) opacity(100%);
+      transform: rotate(3deg);
+      & .autor{ color: map-get($color, highlight-color)}
+      & .label{ background-color: map-get($color, highlight-color);}
+      & .btn-rojo{ background-color: map-get($color, highlight-color);} 
+    }
+    
+    .bloques:nth-child(even):hover{
+      filter: brightness(115%) drop-shadow(0.5em 0.5em #67184f) opacity(100%);
+      transform: rotate(-3deg);
+      & .autor{ color: map-get($color, highlight-color)}
+      & .label{ background-color: map-get($color, highlight-color);}
+      & .btn-rojo{ background-color: map-get($color, highlight-color);}
+    }

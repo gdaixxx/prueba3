@@ -1,0 +1,22 @@
+h1 {
+    font-family: "Bebas Neue", serif;
+    font-size: 4em;
+    color: WHITE !important;
+}
+
+h2{
+    color:  map-get($color, highlight-color);
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+h3 {
+    color:  map-get($color, font-color);
+    font-family: "Ubuntu";
+    font-style: italic;
+    margin-bottom: 0.5em;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+.btn-rojo{
+    background-color: map-get($color, red-tag);
+    color: map-get($color, text-color) !important;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+  }
+
+  .btn-rojo:hover{
+    color: map-get($color, text-color);
+    filter: brightness(115%);
+    zoom: 105%;
+  }
+
+  .btn-seemore{
+    background-color: map-get($color, highlight-color);
+    color: white;
+    margin: 1em;
+    align-self: center;
+  }
+
+  .btn-plus{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0em;
+  }
