@@ -28,15 +28,27 @@
 .bloques:nth-child(odd):hover{
       filter: brightness(115%) drop-shadow(0.5em 0.5em #67184f) opacity(100%);
       transform: rotate(3deg);
-      & .autor{ color: map-get($color, highlight-color)}
-      & .label{ background-color: map-get($color, highlight-color);}
-      & .btn-rojo{ background-color: map-get($color, highlight-color);} 
+      .autor{
+        color: map-get($color, highlight-color)
+      }
+      .label{
+        background-color: map-get($color, highlight-color);
+      }
+      .btn-rojo{
+        background-color: map-get($color, highlight-color);
+      } 
     }
     
     .bloques:nth-child(even):hover{
       filter: brightness(115%) drop-shadow(0.5em 0.5em #67184f) opacity(100%);
       transform: rotate(-3deg);
-      & .autor{ color: map-get($color, highlight-color)}
-      & .label{ background-color: map-get($color, highlight-color);}
-      & .btn-rojo{ background-color: map-get($color, highlight-color);}
+      .autor{
+        color: map-get($color, highlight-color);
+      }
+      .label{
+        background-color: map-get($color, highlight-color);
+      }
+      .btn-rojo{
+        background-color: map-get($color, highlight-color);
+      }
     }

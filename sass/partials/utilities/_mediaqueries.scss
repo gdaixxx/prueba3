@@ -47,8 +47,8 @@
     .navbar-mobile{
         display: block;
         font-family: "Bebas Neue", sans-serif;
-        background-color: var(--nav-color);
-        color: var(--font-color)
+        background-color: map-get($color, nav-color);
+        color: map-get($color, font-color)
     }
 
     h2{

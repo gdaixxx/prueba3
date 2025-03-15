@@ -53,6 +53,12 @@ p {
   padding: 1em 2em;
 }
 
+.flex-center, .circle, .actividades, .grupo-actividades, .contenedor-grupo-actividades, figure, .btn-plus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @keyframes bounce {
   70% {
     transform: translateY(0%);
@@ -125,7 +131,7 @@ p {
 h1 {
   font-family: "Bebas Neue", serif;
   font-size: 4em;
-  color: WHITE !important;
+  color: white !important;
 }
 
 h2 {
@@ -228,8 +234,6 @@ h3 {
 }
 
 .btn-plus {
-  display: flex;
-  justify-content: center;
   margin: 2em 0em;
 }
 
@@ -310,10 +314,6 @@ h3 {
   margin: 1.8em;
 }
 
-figure {
-  display: flex;
-  justify-content: center;
-}
 figure img {
   margin: 0em 1em;
   border-radius: 5px;
@@ -361,20 +361,18 @@ textarea {
   object-fit: cover;
 }
 
+.flex-center, .circle, .actividades, .grupo-actividades, .contenedor-grupo-actividades, .btn-plus, figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .presentacion-actividades {
   background: #a9578c;
 }
 
-.contenedor-grupo-actividades {
-  display: flex;
-  justify-content: center;
-}
-
 .grupo-actividades {
-  display: flex;
-  flex-wrap: wrap;
   gap: 2em;
-  justify-content: center;
   margin: 4em 0em;
   max-width: 1320px;
 }
@@ -390,9 +388,6 @@ textarea {
   width: 30%;
   min-width: 250px;
   gap: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .circle {
@@ -402,9 +397,6 @@ textarea {
   padding: 50% 0;
   border-radius: 50%;
   background-color: #bbb;
-  display: flex;
-  justify-items: center;
-  align-items: center;
   background: rgb(255, 255, 255);
   background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(85, 85, 85) 100%);
 }
@@ -468,8 +460,7 @@ textarea {
   .navbar-mobile {
     display: block;
     font-family: "Bebas Neue", sans-serif;
-    background-color: var(--nav-color);
-    color: var(--font-color);
+    color: #c0caf4;
   }
   h2 {
     margin-top: 1em;

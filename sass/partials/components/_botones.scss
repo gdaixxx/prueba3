@@ -21,7 +21,6 @@
   }
 
   .btn-plus{
-    display: flex;
-    justify-content: center;
+    @extend .flex-center;
     margin: 2em 0em;
   }

@@ -1,7 +1,7 @@
 h1 {
     font-family: "Bebas Neue", serif;
     font-size: 4em;
-    color: WHITE !important;
+    color:  map-get($color, main-title) !important;
 }
 
 h2{
