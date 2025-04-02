@@ -1,7 +1,9 @@
 .miembros{
     text-align: center;
-    margin-top: 1.5em;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     p {
         font-weight: 100;
         color: map-get($color, background-color);
@@ -9,17 +11,32 @@
     }
     
     h4{
-        color: map-get($color, highlight-color);;
+        color: map-get($color, highlight-color);
         font-weight: 500;
         text-align: center;
     }
     
     .miembro {
-        display: inline-block;
+        width: 183px;
+        align-items: center;
+        display: grid;
+        align-items: center;
+        justify-content: center;
         padding: 1em;
         border-radius: 5px;
         background-color: map-get($color, miembro-bg-color);
         margin: 1em;
+    }
+
+    img {
+        margin: 0;
+        width: 150px;
+        height: 150px;
+        object-fit:scale-down;
+        border-radius: 4px;
+        margin-bottom: 1.5em;
+        margin-top: 0.5em;
+        filter:drop-shadow(0 0 0.45rem map-get($color, nav-bg-color)) grayscale(0.2) opacity(0.85);
     }
 }
 

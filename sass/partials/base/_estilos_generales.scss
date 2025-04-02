@@ -2,11 +2,12 @@ body {
     background-color: #292c3d;
     min-height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    // margin-top: 60px; 
 }
 
 main {
-    margin: 0 15px;
+    margin: 10px 20px;
 }
 
 
@@ -22,11 +23,22 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: auto;
+    align-items: center;
+    
+    p {
+        color: #888992;
+    }
+    
+    a {
+        color: #888992;
+        font-size: 1.5em;
+    }
 }
 
 header {
     padding: 0em;
     margin:15px;
+    margin-bottom: 60px;
 }
 
 p {

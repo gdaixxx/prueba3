@@ -1,29 +1,15 @@
 @media (min-width:1000px) {
-    .navbar__menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        font-family: "Bebas Neue", sans-serif;
-        list-style-type: none;
-        font-size: 1.5em;
-        align-items: center;
-        margin-bottom: 0rem;
-    }
-    
-    .navbar-mobile{
-        display: none;
-    }
-
-    h2{
-        margin-top: 0px;
-    }
 
     .presentacion{
         font-size: 1.2em;
         padding: 0.5em;
         margin: 0 1.5em;
+        border-radius: 8px;
     }
 
+    .text-align-in-card{
+        text-align: justify;
+    }
 }
 
 @media (max-width: 1200px){
@@ -36,12 +22,12 @@
 
 @media (max-width:999px) {
 
-    .navbar-large {
-        display: none; 
+    .accordion{
+        width: 400px !important;
     }
 
-    .navhead{
-        display: none;
+    .text-align-in-card{
+        text-align: left;
     }
 
     .navbar-mobile{
@@ -51,19 +37,14 @@
         color: map-get($color, font-color)
     }
 
-    h2{
-        margin-top:1em;
-    }
 
-    main{
-        padding-top:25px;
-    }
 
     .bloques-grid{
         margin: 0px;
         padding: 0px;
         width:100%;
         overflow-x:visible;
+        max-height: calc(11.8 * 310px); /* calcula tres filas de 200 px y añade espacio para compensar el gap. El borde no cuenta porque uso border-box */
     }
 
     .presentacion{
@@ -83,6 +64,7 @@
         width:100%;
         overflow-x:visible;
     }
+
     .presentacion{
         padding: 4px;
         margin-top: 1.8em;
@@ -90,7 +72,16 @@
         margin-left: 0;
         width: auto;
     }
+    
     .logo-unr-navbar{
         display: none
     }
+
+    .proxima_reunion{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 550px){
+    .navbar-title{letter-spacing: 0.1em;}
 }

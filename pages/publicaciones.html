@@ -1,94 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Muestra de algunos de los documentos publicados por miembros de la cátedra, alojados en el repositorio institucional de la universidad">
+    <meta name="keywords" content="UNR, Saussure, Cátedra libre, lingüística, investigación, pulicaciones, rephip">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <!-- Mi hoja de estilos -->
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
     
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     
     <title>Cátedra Libre Ferdinand de Saussure</title>
     
 </head>
 <body>
+
     <header>
-        
-        <h1 class="navhead">Cátedra Libre Ferdinand de Saussure</h1>
-        
-        <nav class="navbar-large">
-            
-            <div class="navbar__logo"> 
-                <img src="../assets/imgs/logo_unr.png" alt="">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-background" data-bs-theme="dark">
+       
+          <div class="container-fluid navbar-background">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/imgs/logo_unr.png" alt="Logo" width="45" height="24" class="logo-unr-navbar">
+              &nbsp; <span class="navbar-title">Cátedra Libre Ferdinand de Saussure</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="./miembros.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item--active">
+                  <a class="nav-link" aria-current="page" href="./publicaciones.html">Publicaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html"  aria-disabled="true">Contacto</a>
+                </li>
+              </ul>
             </div>
-            
-            <ul class="navbar__menu">
-                <li class="navbar__menu-item">
-                    <a href="../index.html">Inicio</a>
-                </li> 
-                <li class="navbar__menu-item">
-                    <a href="./miembros.html">Quiénes somos</a>
-                </li>
-                <li class="navbar__menu-item--selected">
-                    <a href="./publicaciones.html">Publicaciones</a>
-                </li>
-                <li class="navbar__menu-item">
-                    <a href="./actividades.html">Actividades</a>
-                </li>
-                <li class="navbar__menu-item">
-                    <a href="./contacto.html">Contacto</a>
-                </li>  
-            </ul>
-            
-        </nav>
-        
-        <nav class="navbar-mobile" data-bs-theme="dark">
-            <nav class="navbar fixed-top navbar-background">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../assets/imgs/logo_unr.png" alt="Logo" width="45" height="24" class="logo-unr-navbar">
-                        &nbsp; Cátedra Libre Ferdinand de Saussure
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./miembros.html">Quiénes somos</a>
-                            </li>
-                            <li class="nav-item--active">
-                                <a class="nav-link" href="./bloqueses.html">bloqueses</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./actividades.html">Actividades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html"  aria-disabled="true">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </nav>
-    </header>
-    
+          </div>
+     
+      </nav>  
+      </header>
+      
     <main>
 
         <h2>Publicaciones</h2>
         
         <section class="presentacion">
-            <p>Esta sección se encuentra dedicada a publicar novedades en torno a los artículos, reseñas y otros materiales bibliográficos elaborados por nuestro equipo en el marco de las actividades de la Cátedra. Todos estos documentos son de acceso libre y gratuito a través del repositorio institucional de la <abbr title="Universidad Nacional de Rosario">UNR</abbr></p>
+            <p>Esta sección se encuentra dedicada a publicar novedades en torno a los artículos, reseñas y otros materiales bibliográficos elaborados por nuestro equipo en el marco de las actividades de la Cátedra. Todos estos documentos son de acceso libre y gratuito a través del repositorio institucional de la <abbr title="Universidad Nacional de Rosario">UNR</abbr>. Presioná, al final de la pantalla, el íncono <i class="bi bi-plus-circle-fill"></i> para acceder de forma directa el RepHip UNR y conocer todos los textos publicados por los miembros de la cátedra.</p>
         </section>
         
         <section class="bloques-grid">
@@ -96,11 +66,11 @@
                 
                 <p class="label">Artículo</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Paula Navarro</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">El artículo examina la paradoja en el discurso didáctico a partir de nuevas lecturas de la obra de Saussure. Propone revisitar conceptos de la lengua para cuestionar interpretaciones unívocas y abrir vías hacia sentidos más complejos, destacando su potencial teórico y retórico.</p> 
                 
-                <a class="btn btn-rojo" href="#" role="button">
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/ce25f963-e169-4bb9-beb5-b302f89a1f3d/download" role="button">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
                     
@@ -111,47 +81,13 @@
             
             <article class="bloques">
                 
-                <p class="label">Libro</p> 
+                <p class="label">Ponencia</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Norma Desinano</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">La teoría interaccionista de Claudia Lemos analiza cómo la lengua captura al hablante en interacción, generando fenómenos lingüísticos heterogéneos. Esto surge tanto por limitaciones conscientes del hablante como por la naturaleza rica y excedente del sistema lingüístico, generando posibles errores.</p> 
                 
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>
-            
-            <article class="bloques">
-                
-                <p class="label">Reseña</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>
-            
-            <article class="bloques">
-                
-                <p class="label">Conferencia</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/server/api/core/bitstreams/b5b86489-4af7-4fcb-b206-6ff72bc2a8d7/content" role="button">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
                     
@@ -164,28 +100,11 @@
                 
                 <p class="label">Artículo</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Gastón Daix</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">El trabajo plantea que las metáforas y símiles en los escritos de Saussure no son recursos pedagógicos, sino matrices conceptuales que crean representaciones del mundo. Analiza cómo las metáforas producen significados performativos y contrasta ejemplos en el CLG y los ELG.</p> 
                 
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>             
-            
-            <article class="bloques">
-                
-                <p class="label">Libro</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/87519812-b210-4789-a8ba-b155c17429dc/download" role="button">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
                     
@@ -196,30 +115,13 @@
             
             <article class="bloques">
                 
-                <p class="label">Reseña</p> 
+                <p class="label">Comentario</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Cecilia Milan</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">Sobre: Piovezani, C. (2016). Un Curso en discursos transatlánticos. Presencias del Curso de Lingüística General en el Análisis del Discurso. En: Cruz, M. et al. [Orgs.] Saussure, o texto e o discurso: cem anos de herenças e recpçoes. Parabola. </p> 
                 
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>
-            
-            <article class="bloques">
-                
-                <p class="label">Conferencia</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/89e798a5-73af-4c79-a5d9-85752988793b/download" role="button">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
                     
@@ -232,9 +134,9 @@
                 
                 <p class="label">Artículo</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Ana Laura Prado</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">El trabajo analiza la relación entre la noción de lengua de Saussure y el concepto de Sprache de Humboldt, destacando puntos de contacto. Examina cómo Chomsky prioriza a Humboldt en su modelo, relegando a Saussure, pero la segregación entre ellos resulta menos marcada de lo que parece.</p> 
                 
                 <a class="btn btn-rojo" href="#" role="button">
                     
@@ -247,47 +149,13 @@
             
             <article class="bloques">
                 
-                <p class="label">Libro</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>
-            
-            <article class="bloques">
-                
-                <p class="label">Reseña</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>
-            
-            <article class="bloques">
-                
                 <p class="label">Conferencia</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Darío Maiorana</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">Starobinski analiza manuscritos de Saussure (1906-1909) sobre poesía latina, griega y védica, explorando su estructura poética y métrica. Estos textos revelan un Saussure poco conocido, abordando un campo que abandonó sin explicación. El estudio se basa en cuadernos organizados por Godel.</p> 
                 
-                <a class="btn btn-rojo" href="#" role="button">
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/0a1b6386-6355-46b3-b9ea-62c4a2485832/download" role="button">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
                     
@@ -300,11 +168,45 @@
                 
                 <p class="label">Artículo</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Norma Desinano</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">La teoría de Claudia Lemos analiza cómo la lengua captura al hablante en interacción, generando fenómenos heterogéneos. Estos surgen tanto por limitaciones conscientes como por el sistema lingüístico, que excede su uso homogéneo y genera posibles errores lingüísticos.</p> 
                 
-                <a class="btn btn-rojo" href="#" role="button">
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/b5b86489-4af7-4fcb-b206-6ff72bc2a8d7/download" role="button">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
+                    
+                    Descargar
+                    
+                </a>
+            </article>
+            
+            <article class="bloques">
+                
+                <p class="label">Ponencia</p> 
+                
+                <p class="autor">Lucía Desuque et al.</p> 
+                
+                <p class="bloques--resumen">El trabajo explora la relación entre habla, discurso y facultad del lenguaje en la obra de Saussure, rastreando su uso en el Curso y los Escritos sobre lingüística general. Examina cómo la noción de habla fluctúa en estas obras, ofreciendo una conceptualización y conclusiones.</p> 
+                
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/c26b3531-90df-43e6-96f6-30d107f204e6/download" role="button">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
+                    
+                    Descargar
+                    
+                </a>
+            </article>
+            
+            <article class="bloques">
+                
+                <p class="label">Ponencia</p> 
+                
+                <p class="autor">Renata Defelice et al.</p> 
+                
+                <p class="bloques--resumen">La exposición analiza los manuscritos de Saussure descubiertos en 1996, integrados como parte de su obra. Estos textos complejizan las dicotomías del Curso de Lingüística General, ofreciendo nuevas lecturas dinámicas y profundas que amplían las interpretaciones de sus postulados.</p> 
+                
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/514a2991-d1ef-4264-82d1-8e73a23e6e44/download" role="button">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
                     
@@ -315,54 +217,21 @@
             
             <article class="bloques">
                 
-                <p class="label">Libro</p> 
+                <p class="label">Artículo</p> 
                 
-                <p class="autor">Fulano de Tal</p> 
+                <p class="autor">Ana Laura Prado</p> 
                 
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
+                <p class="bloques--resumen">El análisis conecta la noción de lengua de Saussure con el concepto de Sprache de Humboldt, mostrando puntos en común. Examina cómo Chomsky prioriza a Humboldt en su modelo, relegando a Saussure, pero destaca que la relación entre ambos no implica una completa segregación..</p> 
                 
-                <a class="btn btn-rojo" href="#" role="button">
+                <a class="btn btn-rojo" href="https://rephip.unr.edu.ar/bitstreams/3132b408-e688-4650-ab5b-e245cba606b8/download" role="button">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
                     
                     Descargar
                     
                 </a>
-            </article>
-            
-            <article class="bloques">
-                
-                <p class="label">Reseña</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>
-            
-            <article class="bloques">
-                
-                <p class="label">Conferencia</p> 
-                
-                <p class="autor">Fulano de Tal</p> 
-                
-                <p class="bloques--resumen">Dolor sit amet consectetur adipisicing elit. Similique exercitationem delectus unde repellendus tempore quidem odio eaque neque nihil cumque! Rem neque nihil harum nisi voluptate nemo animi dolore minus!</p> 
-                
-                <a class="btn btn-rojo" href="#" role="button">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16"> <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/></svg>
-                    
-                    Descargar
-                    
-                </a>
-            </article>
+            </article>      
+        
         </section>
         
         
@@ -379,9 +248,9 @@
         
         
         <footer>
-            <img src="../assets/imgs//logo_fhumyar.png" id="logo-fhumyar"> <p class="bloques--resumen">Copyright © 2025</p> <a href="#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=IG"></a><a href="mailto:#"><img src="https://placehold.jp/ffffff/3d4070/50x50.png?text=@"></a>
+            <img src="../assets/imgs/logo_fhumyar.png" id="logo-fhumyar"> <p>Copyright © 2025</p> <a href="#"><i class="bi bi-instagram"></i></a><a href="mailto:poeuczmaj@mozmail.com"><i class="bi bi-envelope-at-fill"></i></a>
         </footer>
-        
+
         <!-- JS de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         

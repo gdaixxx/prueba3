@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ body {
 }
 
 main {
-  margin: 0 15px;
+  margin: 10px 20px;
 }
 
 a {
@@ -30,11 +31,20 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: auto;
+  align-items: center;
+}
+footer p {
+  color: #888992;
+}
+footer a {
+  color: #888992;
+  font-size: 1.5em;
 }
 
 header {
   padding: 0em;
   margin: 15px;
+  margin-bottom: 60px;
 }
 
 p {
@@ -53,7 +63,7 @@ p {
   padding: 1em 2em;
 }
 
-.flex-center, .circle, .actividades, .grupo-actividades, .contenedor-grupo-actividades, figure, .btn-plus {
+.flex-center, .circle, .actividades, .proxima_reunion, .grupo-actividades, .contenedor-grupo-actividades, figure, .btn-plus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -149,34 +159,27 @@ h3 {
   font-style: italic;
   margin-bottom: 0.5em;
   text-align: center;
+  margin-top: 1.5em;
 }
 
-.navbar-large {
-  padding: 5px 25px 5px;
-  font-family: "Bebas Neue", serif;
-  display: flex;
-  justify-content: space-between;
-  background-color: #3d425c;
-  border-radius: 12px;
-  margin: 6px;
-  align-items: center;
-  height: 92px;
+.navbar-brand {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 1.2em;
+}
+
+.navbar {
+  display: block;
+  font-family: "Bebas Neue", sans-serif;
+  color: #c0caf4;
+  font-size: 1.2em;
+}
+
+.navbar-item {
+  letter-spacing: 0.05em;
 }
 
 .navbar-background {
   background-color: #3d425c;
-}
-
-.navbar__menu-item a:link, a:visited {
-  color: #c8d2fd;
-  text-decoration: none;
-}
-
-.navbar__menu-item--selected {
-  text-decoration: none;
-  color: white;
-  text-decoration: underline rgb(255, 71, 71) 3px;
-  text-underline-offset: 4px;
 }
 
 .nav-item--active a {
@@ -184,26 +187,30 @@ h3 {
   color: white;
   text-decoration: underline rgb(255, 71, 71) 3px;
   text-underline-offset: 4px;
+  letter-spacing: 0.05em;
 }
 
-.navbar__menu-item a:hover {
+.nav-item a:hover {
   color: #ff69b4;
 }
 
-.navbar__menu-item a:active {
+.nav-item a:active {
   color: #ff4747;
-}
-
-.navbar__menu-item, .navbar__menu-item--selected {
-  border-left: solid #ff69b4 2px;
-  padding: 0em 1em;
-  gap: 1em;
 }
 
 .navbar__logo {
   display: flex;
   justify-content: center;
   height: 50px;
+}
+
+.navbar-toggler {
+  padding: 6px;
+}
+
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1em;
 }
 
 #logo-fhumyar {
@@ -239,7 +246,9 @@ h3 {
 
 .miembros {
   text-align: center;
-  margin-top: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .miembros p {
   font-weight: 100;
@@ -252,11 +261,25 @@ h3 {
   text-align: center;
 }
 .miembros .miembro {
-  display: inline-block;
+  width: 183px;
+  align-items: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
   padding: 1em;
   border-radius: 5px;
   background-color: lightgrey;
   margin: 1em;
+}
+.miembros img {
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  object-fit: scale-down;
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  filter: drop-shadow(0 0 0.45rem #3d425c) grayscale(0.2) opacity(0.85);
 }
 
 .bloques-grid {
@@ -361,12 +384,6 @@ textarea {
   object-fit: cover;
 }
 
-.flex-center, .circle, .actividades, .grupo-actividades, .contenedor-grupo-actividades, .btn-plus, figure {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .presentacion-actividades {
   background: #a9578c;
 }
@@ -375,6 +392,28 @@ textarea {
   gap: 2em;
   margin: 4em 0em;
   max-width: 1320px;
+}
+
+.proxima_reunion {
+  font-family: "Ubuntu";
+  font-size: 3em;
+  gap: 1em;
+  row-gap: 0.2em;
+  align-items: center;
+  border: solid white 1px;
+  border-radius: 8px;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.bi-calendar4-week {
+  font-size: 2em;
+}
+
+.pills-group {
+  text-align: center;
+  line-height: 200%;
+  gap: 1em;
 }
 
 .burbuja {
@@ -421,26 +460,14 @@ textarea {
 }
 
 @media (min-width: 1000px) {
-  .navbar__menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-family: "Bebas Neue", sans-serif;
-    list-style-type: none;
-    font-size: 1.5em;
-    align-items: center;
-    margin-bottom: 0rem;
-  }
-  .navbar-mobile {
-    display: none;
-  }
-  h2 {
-    margin-top: 0px;
-  }
   .presentacion {
     font-size: 1.2em;
     padding: 0.5em;
     margin: 0 1.5em;
+    border-radius: 8px;
+  }
+  .text-align-in-card {
+    text-align: justify;
   }
 }
 @media (max-width: 1200px) {
@@ -451,28 +478,23 @@ textarea {
   }
 }
 @media (max-width: 999px) {
-  .navbar-large {
-    display: none;
+  .accordion {
+    width: 400px !important;
   }
-  .navhead {
-    display: none;
+  .text-align-in-card {
+    text-align: left;
   }
   .navbar-mobile {
     display: block;
     font-family: "Bebas Neue", sans-serif;
     color: #c0caf4;
   }
-  h2 {
-    margin-top: 1em;
-  }
-  main {
-    padding-top: 25px;
-  }
   .bloques-grid {
     margin: 0px;
     padding: 0px;
     width: 100%;
     overflow-x: visible;
+    max-height: 3658px; /* calcula tres filas de 200 px y añade espacio para compensar el gap. El borde no cuenta porque uso border-box */
   }
   .presentacion {
     padding: 4px;
@@ -498,6 +520,14 @@ textarea {
   }
   .logo-unr-navbar {
     display: none;
+  }
+  .proxima_reunion {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 550px) {
+  .navbar-title {
+    letter-spacing: 0.1em;
   }
 }
 

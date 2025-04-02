@@ -1,8 +1,4 @@
-.flex-center{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 .presentacion-actividades{
     background: map-get($color, highlight-color);
@@ -17,6 +13,29 @@
     gap: 2em;
     margin: 4em 0em;
     max-width: 1320px;
+}
+
+.proxima_reunion{
+    @extend .flex-center;
+    font-family: "Ubuntu";
+    font-size: 3em;
+    gap: 1em;
+    row-gap: 0.2em;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 8px;
+    margin: 0 20px;
+    padding: 10px
+}
+
+.bi-calendar4-week{
+    font-size: 2em;
+}
+
+.pills-group{
+    text-align: center;
+    line-height: 200%;
+    gap:1em;
 }
 
 .burbuja{ 
